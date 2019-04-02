@@ -5,7 +5,7 @@ int main(int argc, char *argv[]){
 	
 	int opt;
 
-	while((opt = getopt(argc, argv, "af:tx")) != -1){
+	while((opt = getopt(argc, argv, "af:")) != -1){
 		
 		switch (opt) {
 
