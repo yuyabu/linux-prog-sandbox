@@ -28,7 +28,7 @@ static void do_ls(char *path){
 		perror(path);
 		exit(1);
 	}
-	while(ent = readdir(d)){
+	while((ent = readdir(d)) != NULL){
 		printf("%s\n", ent->d_name);
 	}
 	closedir(d);
